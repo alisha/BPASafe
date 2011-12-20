@@ -5,6 +5,9 @@
 *  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
 *	
 */
+
+/* Modified by Ali Ukani for BPASafe.net */
+
 /*
 *
 *  Margin, padding, and border resets
@@ -207,11 +210,15 @@ body {
 *  5.55555% | %  25  50  75  100 | 5.55555%
 *
 */
-header, #twoway {
+header, section, #footer {
   margin: 0 5.555555555555555%;
 }
 h1, h2 {
   margin: 0.9230769230769231em 0 1.3846153846153846em;
+}
+#header h1 {
+	font-size: 4.25em;
+	line-height: 1.0588235294117647em;
 }
 h2 {
   font-weight: normal;
@@ -219,11 +226,12 @@ h2 {
 h3 {
   margin: 1.5em 0 1.5em;
 }
+
 /*
 *  Simple elastic gutters
 *  Note: box-sizing will not work in IE6-8
 */
-.wrapper {
+section {
   padding: 0 0.75em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -252,15 +260,7 @@ h3 {
 @media screen and (min-width: 40em) {
   body {
     /* Zoom baseline grid to 17/16 = 1.0625 */
-  
     font-size: 1.0625em;
-  }
-  h1 {
-    /* 42px / 48px */
-  
-    font-size: 2.625em;
-    line-height: 1.1428571428571428em;
-    margin: 1.1428571428571428em 0 0.5714285714285714em;
   }
 }
 /*
@@ -274,15 +274,27 @@ h3 {
 */
 /* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
-  body {
-    /* Reset baseline grid to 16/16 = 1 */
-  
-    font-size: 1em;
-  }
-  #twoway .wrapper {
-    float: left;
-    width: 50%;
-  }
+	body {
+		/* Reset baseline grid to 16/16 = 1 */
+		font-size: 1em;
+	}
+	
+	#where .wrapper {
+		float: left;
+		width: 33.333333333333333%;
+	}
+	
+	#header h1 {
+		font-size: 6.875em;
+		line-height: 1.0909090909090908em;
+		margin: 1.1428571428571428em 0 0.5714285714285714em;
+	}
+	
+	#header h2 {
+		font-size: 2.625em;
+	  	line-height: 1.1428571428571428em;
+	}
+
 }
 /* @media screen and (min-width: 888px) */
 @media screen and (min-width: 55.5em) {
@@ -299,7 +311,7 @@ h3 {
   
     font-size: 1em;
   }
-  header, #twoway {
+  header, section {
     margin: 0 16.666666666666664%;
   }
 }
@@ -317,8 +329,9 @@ h3 {
     /* Reset baseline grid to 16/16 = 1.0 */
   
     font-size: 1em;
+    
   }
-  header, #twoway {
+  header, section {
     margin: 0 27.77777777777778%;
   }
 }
@@ -341,20 +354,26 @@ h3 {
 */
 /* @media screen and (min-width: 1872px) */
 @media screen and (min-width: 117em) {
-  header, #twoway {
+  header {
     margin: 0 5.555555555555555%;
   }
   header .wrapper {
-    width: 37.5%;
+    width: 50.0%;
     margin-left: 25%;
   }
-  #twoway .wrapper {
-    width: 25%;
+  
+  #where .wrapper {
   }
-  #twoway .wrapper:first-child {
-    margin-left: 25%;
+  #where .wrapper:second-child {
+  	margin-left: 25%;
+  }
+  
+  body {
+  	border-top: none;
   }
 }
+
+
 /* @media screen and (min-width: 2080px) */
 @media screen and (min-width: 130em) {
   body {

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+
 <head>
 	<meta charset="utf-8" />
 	
@@ -10,11 +13,10 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<!-- <link rel="stylesheet" href="css/reset.css" media="screen" /> -->
 	<link rel="stylesheet" href="css/GGS.css" media="screen" />
 	<link rel="stylesheet" href="css/style.css" media="screen" />
 	
-	<script src="GGS.js"></script>
+	<script src="js/GGS.js"></script>
 	
 	<!-- 
 		This script enables structural HTML5 elements in old IE.
@@ -28,12 +30,10 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body lang="en">
-
-<div id="wrapper">
+<body lang="en" onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 
 <header id="header">
-	<hgroup>
+	<hgroup class="wrapper">
 		<h1>BPA Safe</h1>
 		<h2>Learn more about staying healthy by avoiding products with <abbr title="Bisphenol A">BPA</abbr>.</h2>
 	</hgroup>
@@ -48,18 +48,18 @@
 <section id="where">
 	<h1>Where is BPA?</h1>
 
-	<div>
+	<div class="wrapper">
 		<h2>Type 3 plastics</h2>
 		<ul>
 			<li>Food wrap</li>
 			<li>Vegetable oil packaging</li>
 			<li>Juice bottles</li>
-			<li>PVC</li>
+			<li><abbr title="Polyvinyl chloride">PVC</abbr></li>
 			<li>Medical tubing</li>
 		</ul>
 	</div>
 
-	<div>
+	<div class="wrapper">
 		<h2>Type 7 plastics</h2>
 		<ul>
 			<li>Layered/mixed plastics</li>
@@ -68,7 +68,7 @@
 		</ul>
 	</div>
 	
-	<div>
+	<div class="wrapper">
 		<h2>Other</h2>
 		<ul>
 			<li>The inside linings of aluminum cans</li>
@@ -125,10 +125,7 @@
 	<ul>
 		<li>Buy BPA-Free water bottles, or better yet, buy aluminum bottles that you can always refill.</li>
 		<li>Buy BPA-Free baby bottles</li>
-		<li>
-			Write a letter to your congressperson or leader asking them to vote for BPA to be banned from your state, if it hasn’t been already.<br />
-			To find out if your state our country has banned BPA already, see <a href="#banned">"Has anyone banned BPA?"</a>.
-		</li>
+		<li>Write a letter to your congressperson or leader asking them to vote for BPA to be banned from your state, if it hasn’t been already. (To find out if your area has banned BPA already, see <a href="#banned">"Has anyone banned BPA yet?"</a>)</li>
 		<li>Tell others about this site, so they can also make the right choices.</li>
 		<li>Donate to organizations that are also working to stop BPA. For a list of organizations, see the Organizations page.</li>
 	</ul>
@@ -156,7 +153,7 @@
 	
 	<ul>
 		<li>
-			<a href="http://en.wikipedia.org/wiki/Bisphenol_A">Bisphenol A - Wikipedia</a> &mdash;
+			<a href="http://en.wikipedia.org/wiki/Bisphenol_A">Bisphenol A - Wikipedia</a> --
 			Wikipedia's overview of Bisphenol A.
 		</li>
 	</ul>
@@ -165,27 +162,23 @@
 
 <footer id="footer">
 	<p>by Alisha Ukani</p>
+
+	
+	<!-- Social stuff 
+	<div id="social">
+		<div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bpasafe.net" data-text="Just learned about BPA and how to avoid it at BPASafe.net" data-lang="en">Tweet</a></div>
+		<div class="fb-like" data-href="http://bpasafe.net" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
+	</div> -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- /#social -->
 </footer>
-
-
-
-
-<!-- Social stuff -->
-<div id="social">
-	<div class="tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bpasafe.net" data-text="Just learned about BPA and how to avoid it at BPASafe.net" data-lang="en">Tweet</a></div>
-	<div class="fb-like" data-href="http://bpasafe.net" data-send="false" data-layout="button_count" data-width="90" data-show-faces="true"></div>
-</div>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- /#social -->
-
-</div> <!-- /#wrapper -->
 </body>	
 </html>
