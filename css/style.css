@@ -1,0 +1,119 @@
+/* ========================
+   BASE STYLES
+   ======================== */
+   
+body{
+	padding: 2em;
+}
+
+
+
+/* Set up some spacing */
+body > section {
+	margin-bottom: 2em;
+	clear: both;
+}
+
+/* Top and bottom */
+#header, #footer {
+	text-align: center;
+}
+
+/* All headers */
+h1, h2, h3{
+	/*text-shadow: 2px 2px 3px #FFF;*/
+}
+
+/* ========================
+   HEADER
+   ======================== */
+#header {
+	margin-bottom: 5em;
+}
+
+#header hgroup {
+	margin: 0 auto;
+}
+
+#header h1, #header h2{
+}
+
+#header h1 {
+	font-size: 8em;
+}
+
+#header h2 {
+	font-size: 2.5em;
+	color: #1E90FF;
+}
+
+/* ========================
+   BODY TEXT
+   ======================== */
+
+/* Headers */
+div > h1,
+div > h2,
+div > h3 {
+	margin: 0.5em 0 0.5em 0;
+	text-transform: capitalize;
+	clear: both;
+}
+
+div > h1 {
+	font-size: 2em;
+}
+
+div > h2 {
+	font-size: 1.75em;
+}
+
+/* Body text */
+p, ul {
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+p {
+	
+}
+
+/* Lists */
+ul {
+	padding-left: 1.1em;
+}
+
+
+li > ul {
+	font-size: 1em;
+	margin: 0;
+	font-size: 95%;
+}
+
+
+/* ===========================================================
+   #WHERE
+   This div has three sub-divs. Let's place them side by side.
+   =========================================================== */
+
+#where > div {
+	float: left;
+	width: 31%;
+}
+
+/* Add a margin to the middle div */
+#where > div:nth-child(3) {
+	margin: 0 3%;
+}
+
+
+/* ========================
+   SOCIAL
+   ======================== */
+#social {
+	float: right;
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+}
