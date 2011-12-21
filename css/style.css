@@ -1,0 +1,73 @@
+/* ========================
+   BASE STYLES
+   ======================== */
+
+section {
+	clear: both;
+}
+
+#header, #footer {
+	text-align: center;
+}
+
+section h2 {
+	color: #444;
+}
+
+#footer {
+	margin: 2em 0 1em;
+}
+
+a, a:visited {
+	color: #1E90FF;
+}
+
+/* ========================
+   HEADER
+   ======================== */
+
+#header h1, #header h2 {
+	
+}
+
+#header h1 {
+
+}
+
+#header h2 {
+	color: #1E90FF;
+}
+
+/* ========================
+   BODY TEXT
+   ======================== */
+
+
+
+section h1, section h2 {}
+
+.wrapper h2 {
+	margin-top: 0;
+}
+
+#where .wrapper {
+/* 	margin-bottom: 0.9230769230769231em; */
+}
+
+section > ul, section > p {
+	
+}
+
+ul {
+	padding-left: 1em;
+}
+
+/* ========================
+   SOCIAL
+   ======================== */
+#social {
+	float: right;
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+}
